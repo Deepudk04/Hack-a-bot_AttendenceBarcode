@@ -1,0 +1,197 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="772,2381" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="78">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>UiPath.Database.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="782,2316" sap2010:WorkflowViewState.IdRef="Sequence_9">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="s:String[]" Name="Array" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="740,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[Array]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[Directory.GetFiles("C:\Users\Admin\Documents\UiPath\Hack-a-Bot_proj_barcode\Barcodes")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="740,2124" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Array]">
+      <ui:ForEach.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="704,2000" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Online Barcode Scanner | Barcode Reader SDK | Dynamsoft" sap:VirtualizedContainerService.HintSize="662,1908" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="7660be8e-0260-46ba-b801-c5552997f314" Version="V1">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,1692" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="name" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'Upload File'" sap:VirtualizedContainerService.HintSize="586,156" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://demo.dynamsoft.com/barcode-reader/" DesignTimeRectangle="340, 139, 200, 49" FriendlyName="'Upload File'" FullSelectorArgument="&lt;webctrl id='btn-addImg' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btn-addImg' tag='DIV' type='' aaname='                                                                                                                         ' check:text='Upload File' /&gt;" Guid="2a305172-fb21-4bed-a454-7a73bfaa994d" ImageBase64="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" InformativeScreenshot="c2659127d22ed57b952c67567d0e60b5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Barcode Scanner | Barcode Reader SDK | Dynamsoft' /&gt;" SearchSteps="FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File &amp;name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="586,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="7660be8e-0260-46ba-b801-c5552997f314" Text="[item.ToString]" Version="V1">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="201, 410, 443, 15" ElementType="InputBox" FriendlyName="'Edit'" FullSelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;&lt;wnd ctrlid='1148' /&gt;" Guid="7062666a-7f97-4ffe-9f7b-8b52ed36e497" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAb8AAAATCAYAAAAAugNTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABtSURBVHhe7dUhAcAwEMDAyXr/5GV1rGQOlgOHIiDPzBwAKDE/AHLu/Hb3EwHgj8wPgBzzAyDH/ADIMT8AcswPgBzzAyDH/ADIMT8AcswPgBzzAyDH/ADIMT8AcswPgBzzAyDnzg8AKswPgJg5L/2D7ameEaODAAAAAElFTkSuQmCC" InformativeScreenshot="970472f89941f65b1583a376740cc61f.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="138, 409, 54, 15" ElementType="Text" FriendlyName="'File &amp;name'" FullSelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' check:text='File &amp;amp;name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADoAAAATCAYAAADBGB7WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD+SURBVFhH7VPREcMgCO1YTuMszsIobuIkVIwY9IgmTT9aI7l3hwYePMWXMQafgCV0Niyhs0EIdeixtgAWjQUM8QPLMez/FxqhIxFL6M/jhFC538SksWbz6Ko8Qo6H/VGk55D/O/lWvKtz3M7tnUELeyXJofZAxAHQckxE941SgWOh0o+I5FUDkpNFJGWdAym80bjRfBqFu+I46IFi+kJFkrov/Ooks5Vb0XKVdRaxmVJjxHGqhw03hWq3IzFqkvMtQlBqXOLo48YbJV+MlIqWU6zleKWGtRqjNflKD18dXfrXjs6l0aVbzHnBo//kRmmt9dAXOjeW0NmwhM4Fg2+pzljmPe2nEQAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="586,156" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7660be8e-0260-46ba-b801-c5552997f314" Version="V1">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="676, 434, 88, 26" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' check:text='unchecked' /&gt;" Guid="5497388b-657b-485f-b00d-c4710b657f5c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE4SURBVGhD7ZXtDYMgFEW7k3+chWVYhVUYhQ3cgHJRFEFNk+orNPckJ2n9anLA19c4jp7KyeDCrsGnaaIPehicPMNl8GEY6I0CBhcUMLiggMEFBQwuKGBwQUF7wbWNv51wRh1f16GgreAxtvNGpWPKG/c/0UFDwee4VhfHlQlLYL3Oj3UqaCf4aVgsRNr1OlwRPmtcO7Pb/fEZifSs5R6zjapfvTGgreDOeFWdy3c+4gXSdTFwsRhpHIXxNIdd7rF6Pb4thqygzx2+zvjBo19cjN3uXoiRy3vqZ0gJ2gn+0QwvY2X3nC4Yg59bve6Ik8/c4nu1GEfzmcGvjdE39jt+jmVt9teYny/HCkfKt/4u1h0CBhcUMLigoLPgfQsYXFDA4IICBhcUXAYn93ManD5nFZzKyOCijv4Nak8CcxEYFZ8AAAAASUVORK5CYII=" InformativeScreenshot="5a46f6fd55605e0f920633e3818cf401.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="586,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <uix:NGetText DisplayName="Get Text 'Richard-201401036'" sap:VirtualizedContainerService.HintSize="586,156" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="7660be8e-0260-46ba-b801-c5552997f314" Version="V1">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="https://demo.dynamsoft.com/barcode-reader/" DesignTimeRectangle="1218, 218, 108, 17" ElementType="Text" FriendlyName="'Richard-201401036'" FullSelectorArgument="&lt;webctrl parentid='div-logContent' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='div-logContent' tag='SPAN' type='' /&gt;" Guid="4ab732a7-f876-4b72-b130-a68df64c13b0" InformativeScreenshot="06277bfe45b785aba3ab8e8335262f54.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Online Barcode Scanner | Barcode Reader SDK | Dynamsoft' /&gt;" SearchSteps="FuzzySelector" />
+                      </uix:NGetText.Target>
+                      <uix:NGetText.Text>
+                        <OutArgument x:TypeArguments="x:String">[name]</OutArgument>
+                      </uix:NGetText.Text>
+                    </uix:NGetText>
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="586,693" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+                      <ueab:ExcelProcessScopeX.Body>
+                        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,607" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="510,515" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" WorkbookPath="AttendanceList.xlsx">
+                              <ueab:ExcelApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,249" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ueab:WriteCellX AutoIncrementRow="True" Cell="[Excel.Sheet(&quot;Sheet1&quot;).Cell(&quot;A2&quot;)]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="WriteCellX_1" Value="[name]" />
+                                  </Sequence>
+                                </ActivityAction>
+                              </ueab:ExcelApplicationCard.Body>
+                            </ueab:ExcelApplicationCard>
+                          </Sequence>
+                        </ActivityAction>
+                      </ueab:ExcelProcessScopeX.Body>
+                    </ueab:ExcelProcessScopeX>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="49a8953978c96299ef487cafc55143c5.png" Selector="&lt;html app='chrome.exe' title='Online Barcode Scanner | Barcode Reader SDK | Dynamsoft'/&gt;" Url="https://demo.dynamsoft.com/barcode-reader/" />
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEach.Body>
+    </ui:ForEach>
+  </Sequence>
+</Activity>
